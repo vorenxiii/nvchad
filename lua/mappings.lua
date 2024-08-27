@@ -29,8 +29,8 @@ map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 map("n", "{", "{zz")
 map("n", "}", "}zz")
-map("n", "G", "Gzz")
-map("n", "gg", "ggzz")
+-- map("n", "G", "Gzz")
+-- map("n", "gg", "ggzz")
 map("n", "%", "%zz")
 map("n", "*", "*zz")
 map("n", "#", "#zz")
@@ -87,3 +87,8 @@ map({ 'n', 'v' }, '[c', function()
   if gs then gs.prev_hunk() end
 end, { desc = 'Jump to previous git change' })
 
+
+-- Replace HEX colors with HSL
+vim.keymap.set('n', '<leader>R', function()
+  require('utils.hex-to-hsl').replaceHexWithHSL()
+end, { desc = 'Replace HEX color with HSLA' })
