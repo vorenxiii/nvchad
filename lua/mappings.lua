@@ -69,7 +69,7 @@ map(
   "n",
   "<leader>rp",
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-  { desc = "The[P]rimeagen [R]eplace", remap = true }
+  { desc = "ThePrimeagen replace", remap = true }
 )
 
 -- Tmux sessionizer script
