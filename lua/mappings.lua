@@ -76,17 +76,8 @@ map(
 map("n", "<C-f>", "<cmd>silent ! tmux neww ~/bin/.local/scripts/tmux-sessionizer.sh<CR>")
 
 -- gitsings
-local gs = package.loaded.gitsigns
-
--- Navigation
-map({ 'n', 'v' }, ']c', function()
-  if gs then gs.next_hunk() end
-end, { desc = 'Jump to next git change' })
-
-map({ 'n', 'v' }, '[c', function()
-  if gs then gs.prev_hunk() end
-end, { desc = 'Jump to previous git change' })
-
+map("n", "]c", "<CMD>Gitsigns next_hunk<CR>", {desc = "Jump to next git hunk"})
+map("n", "[c", "<CMD>Gitsigns prev_hunk<CR>", {desc = "Jump to next git hunk"})
 
 -- Replace HEX colors with HSL
 vim.keymap.set('n', '<leader>R', function()
