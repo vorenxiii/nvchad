@@ -34,8 +34,8 @@ map("n", "}", "}zz")
 map("n", "%", "%zz")
 map("n", "*", "*zz")
 map("n", "#", "#zz")
-map("n", "<C-o>", "<C-o>zz", { noremap = true, silent = true })
-map("n", "<C-i>", "<C-i>zz", { noremap = true, silent = true })
+-- map("n", "<C-o>", "<C-o>zz", { noremap = true, silent = true })
+map("n", "<C-m>", "<C-i>", { noremap = true, silent = true })
 -- map('n', '<Tab>', '<C-i>zz')
 -- map('n', '<S-Tab>', '<C-o>zz')
 -- map('n', '<C-k>', '<cmd>cnext<CR>zz')
@@ -73,7 +73,7 @@ map(
 )
 
 -- Tmux sessionizer script
-map("n", "<C-f>", "<cmd>silent ! tmux neww ~/bin/.local/scripts/tmux-sessionizer.sh<CR>")
+map("n", "<C-f>", "<cmd>silent ! tmux neww ~/.local/scripts/tmux-sessionizer.sh<CR>")
 
 -- gitsings
 map("n", "]c", "<CMD>Gitsigns next_hunk<CR>", {desc = "Jump to next git hunk"})
