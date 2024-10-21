@@ -5,6 +5,7 @@
 - So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
 
 > [!BUG]
+>
 > NvChad just had a major update.
 > NvChad v3 is out with braking changes.
 > I'll be working on a new version of my NvChad custom configs.
